@@ -1,4 +1,4 @@
-# Button按钮
+# 按钮
 ---
 ::: demo 默认特性：增加水波纹点击效果，TIp文字提示
 ```html
@@ -39,6 +39,7 @@
    display: flex;
   justify-content: center;
 }
+
 </style>
 ```
 :::

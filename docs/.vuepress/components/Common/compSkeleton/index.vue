@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import skeletonItem from './skeletonItem'
+import skeletonItem from './skeletonItem.vue'
 
 export default {
   name: 'Skeleton',

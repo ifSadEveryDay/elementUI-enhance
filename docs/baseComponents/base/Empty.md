@@ -14,6 +14,15 @@
 </style>
 ```
 :::
+# 404
+::: demo 默认特性：随机选取图片
+```html
+<template>
+    <Common-compError-index>
+    </Common-compError-index>
+</template>
+```
+:::
 
 ## Attributes
 

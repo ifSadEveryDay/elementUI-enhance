@@ -9,13 +9,13 @@ module.exports = {
     // 添加导航栏
     nav: [
       { text: '主页', link: '/' }, // 导航条
-      { text: '组件文档', link: '/baseComponents/' },
+      {text:'介绍',link:'/baseComponents/base/introduction'},
       {
         text: 'github',
         // 这里是下拉列表展现形式。
         items: [
           { text: 'my-github', 
-          link: 'https://github.com/luoawai' }
+          link: 'https://github.com/luoawai/elementUI-enhance' }
         ]
       }
     ],
@@ -23,36 +23,20 @@ module.exports = {
     sidebar:{
       '/baseComponents/': [
         {
-          title: '布局类组件',
+          title: '简介',
           collapsable: true,
           children: [
+            { title: '介绍', path: 'base/introduction' },
             'base/button',
             'base/countUp',
             'base/Avatar',
-            'base/test4',
+            'base/Login',
             'base/Empty',
             'base/Skeleton',
             'base/Step',
             'base/Table',
             'base/Text',
-          ]
-        },
-        {
-          title: '可视化组件',
-          collapsable: true,
-          children: [
-          ]
-        },
-        {
-          title: '工具类组件',
-          collapsable: true,
-          children: [
-          ]
-        },
-        {
-          title: '方法类函数',
-          collapsable: true,
-          children: [
+            'base/upload',
           ]
         }
       ]

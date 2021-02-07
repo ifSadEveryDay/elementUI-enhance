@@ -11,7 +11,7 @@
   <div
   >
     <el-dialog
-    v-dialogDrag
+      v-dialogDrag
       ref="elDialog"
       :fullscreen="fullscreen"
       :visible.sync="dialogVisible"

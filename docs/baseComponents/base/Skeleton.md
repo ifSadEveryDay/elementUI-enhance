@@ -7,7 +7,7 @@
 <template>
   <div>
       <Common-compSkeleton-index
-      :active="true"
+      :active="active"
       :paragraph="paragraph"
       >
       </Common-compSkeleton-index>
@@ -17,7 +17,6 @@
 export default {
   data() {
     return {
-      message: 'Hello Vue',
       active:true,
       paragraph: {
                 type: "row",
@@ -76,7 +75,7 @@ export default {
 
 ## Attributes
 
-|  参数   |   说明   |  类型  |           可选值           |  默认值  |
-| :-----: | :------: | :----: | :------------------------: | :------: |
-| desText | 提示文字 | string |             —              | 暂无数据 |
-| imgList | 图片url  | Array  | [defaultPng, error, empty] |  empty   |
+|   参数    |        说明        |  类型   | 可选值 | 默认值 |
+| :-------: | :----------------: | :-----: | :----: | :----: |
+|  active   | 是否渲染骨架屏动画 | Boolean |   —    | false  |
+| paragraph |      渲染数据      | Object  |   —    |   —    |

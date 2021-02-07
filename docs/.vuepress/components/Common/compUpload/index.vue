@@ -50,10 +50,10 @@
                 class="el-icon-upload2"
               ></i>
             </span>
-            <span class="el-upload-list__item-delete">
+            <!-- <span class="el-upload-list__item-delete">
               <i class="el-icon-download"></i>
-            </span>
-            <span class="el-upload-list__item-delete">
+            </span> -->
+            <span class="el-upload-list__item-delete" @click="deleteItem(file)">
               <i class="el-icon-delete"></i>
             </span>
           </span>
@@ -109,9 +109,9 @@
                   margin: '5px',
                 }"
               >
-                <div :style="previews.div">
+                <!-- <div :style="previews.div">
                   <img :src="previews.url" :style="previews.img" />
-                </div>
+                </div> -->
               </div>
             </div>
           </template>
@@ -143,14 +143,12 @@
 import comForm from '../compForm';
 import comDialog from '../compDialog';
 import ImageViewer from 'element-ui/packages/image/src/image-viewer';
-import { VueCropper } from 'vue-cropper';
 export default {
   name: 'compUpload',
   components: {
     comForm,
     comDialog,
-    ImageViewer,
-    VueCropper
+    ImageViewer
   },
   props: {
     type: {
@@ -254,6 +252,12 @@ export default {
     }
   },
   methods: {
+    deleteItem(file){
+      const index=this.$refs.comUpload.uploadFiles.findIndex(name => {
+        return name.name === file.name;
+      });
+      this.$refs.comUpload.uploadFiles.splice(index,1);
+    },
     realTime(data) {
       this.previews = data;
     },
@@ -315,7 +319,7 @@ export default {
       this.$refs.comUpload.uploadFiles[this.currentUploadIndex].name = this.form.name;
       //  = this.previews.url;
       this.$refs.cropper.getCropBlob((data) => {
-        this.$refs.comUpload.uploadFiles[this.currentUploadIndex].url = window.URL.createObjectURL(data);
+         this.$refs.comUpload.uploadFiles[this.currentUploadIndex].url = window.URL.createObjectURL(data);
       });
       this.$message.success('保存详情成功');
       this.dialogVisible = false;
@@ -340,11 +344,12 @@ export default {
   left: 0px;
   bottom: 0px;
   width: 100%;
-  background: #ccc;
+  background: #6C6B6F;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   text-align: center;
+  color:#fff;
 }
 .CropperClass {
   width: 100%;

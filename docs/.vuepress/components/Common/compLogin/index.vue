@@ -21,19 +21,23 @@
           <el-input
             v-model="form[itemData.field]"
             :disabled="itemData.isDisabled"
-            :placeholder="itemData.placeholder || '请输入'"
+            :placeholder="itemData.placeholder || '请输入验证码'"
             props="CodeShow"
-            style="margin-right: 10px"
+            style="margin-right: 10px;margin-left:-22%;"
           ></el-input>
-          <canvas-code ref="codeRes"></canvas-code>
+          <canvas-code ref="codeRes" class="canvasFixStyle"></canvas-code>
         </div>
       </template>
-      <template #verifyCode="{form, itemData}">
+      <template #verifyCode="{ form, itemData }">
         <div class="verifyCodeContainer">
-          <verify-code class="verifyCode" ref="verifyCode" @success="onSuccess"></verify-code>
-        <span v-if="success">
-          <i class="el-icon-circle-check iconStyle"></i>
-        </span>
+          <verify-code
+            class="verifyCode"
+            ref="verifyCode"
+            @success="onSuccess"
+          ></verify-code>
+          <span v-if="success">
+            <i class="el-icon-circle-check iconStyle"></i>
+          </span>
         </div>
       </template>
       <template #footer="{ form }">
@@ -58,8 +62,13 @@ export default {
   props: {
     form: {
       type: Object,
-      default: () => { 
+      default: () => {
 
+      }
+    },
+    rules: {
+      type: Object,
+      default: () => {
       }
     },
     // label宽
@@ -72,7 +81,9 @@ export default {
     },
     formOptions: {
       type: Array,
-      default: () => []
+      default: () => [
+        
+      ]
     },
     isCheck: {
       type: Boolean,
@@ -92,42 +103,14 @@ export default {
   filters: {
 
   },
-  data() {
+  data () {
     return {
-      rules: {
-        userName: [
-          {
-            required: true, message: '请输入用户名', trigger: 'blur'
-          }
-        ],
-        passWord: [{
-          required: true, message: '请输入密码', trigger: 'blur'
-        }],
-        CodeShow: [
-          {
-            required: true,
-            trigger: 'blur',
-            validator: (rule, value, callback) => {
-              if (value.trim().length === 0) {
-                callback(new Error('请输入验证码'));
-              } else {
-                if (value.toLocaleLowerCase() !== this.$refs.codeRes.result) {
-                  callback(new Error('验证码错误！'));
-                } else {
-                  callback();
-                }
-              }
-            }
-          }
-        ]
-
-      },
       success: false
     };
   },
   computed: {
   },
-  created() {
+  created () {
     if (this.isCheck) {
       switch (this.isCheckName) {
         case 'Code':
@@ -161,17 +144,17 @@ export default {
 
     }
   },
-  mounted() {
+  mounted () {
   },
   watch: {
 
   },
   methods: {
-    onSuccess() {
+    onSuccess () {
       this.success = true;
     }
   },
-  destroyed() {
+  destroyed () {
 
   }
 };
@@ -199,23 +182,25 @@ export default {
   width: 100%;
   display: flex;
   margin-top: 10px;
-  justify-content: center;
   ::v-deep.el-button {
-    margin-left: 13%;
-    width: 82%;
+    margin-left:2%;
+    width: 52%;
   }
 }
-.verifyCodeContainer{
+.verifyCodeContainer {
   display: flex;
+  width: 100%;
 }
-.verifyCode{
+.verifyCode {
   margin-top: -15px;
-
 }
-.iconStyle{
-    color: #467cd4;
-    font-size: 20px;
-    margin-left: 40%;
-    margin-top: 60%;
-  }
+.iconStyle {
+  color: #467cd4;
+  font-size: 20px;
+  margin-left: 40%;
+  margin-top: 60%;
+}
+.canvasFixStyle{
+  margin-left:-40%;
+}
 </style>

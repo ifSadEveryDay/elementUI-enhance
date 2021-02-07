@@ -13,6 +13,9 @@ export default ({
   router, // 当前应用的路由实例
   siteData // 站点元数据
 }) => {
+  import('vue-cropper').then(VueCropper => {
+    Vue.use(VueCropper);
+  }) 
   // ...做一些其他的应用级别的优化
   Vue.use(VueHighlightJS)
   Vue.use(Element)

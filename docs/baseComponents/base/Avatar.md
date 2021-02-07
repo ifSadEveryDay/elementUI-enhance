@@ -6,10 +6,20 @@
   <Common-compAvatar-index
     ></Common-compAvatar-index>
      <Common-compAvatar-index
-     :imgArr="['https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png','https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png','https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png']"
-     :isShowNum="2"
+     :imgArr="imgArr"
+     :isShowNum="isShowNum"
     ></Common-compAvatar-index>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      imgArr:['https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png','https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png','https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png'],
+      isShowNum:2
+    }
+  }
+}
+</script>
 ```
 :::
 
