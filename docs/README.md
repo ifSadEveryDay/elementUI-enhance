@@ -1,16 +1,4 @@
----
-home: true
-heroImage: /1.jpg
-actionText: 快速上手 →
-actionLink: /baseComponents/base/introduction
-features:
-- title: 配置化页面
-  details: 对常用页面组件封装,配置化
-- title: 简单高效
-  details: 对 element-ui的一些属性配置简化
-- title: 轻松上手
-  details: 兼容官方api,易上手,易扩展
-footer: MIT Licensed | Copyright © 2020-present luodeyuan
----
+elementUI-enhance
+elementUI-enhance是一套基于element-ui的二次封装组件库,它使用了最新的前端技术栈,在基于element-ui的原有功能上,提供大量扩展,大大简化代码,对于后台系统常用的查询表格等都封装成了组件, 实现配置式页面.
 
-<div align='center' ><font size='70'>Follow Me Get Started</font></div>
+文档地址https://luoawai.github.io/elementUI-enhance
