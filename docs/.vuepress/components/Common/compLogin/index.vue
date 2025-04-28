@@ -1,12 +1,4 @@
-<!--
- * @Descripttion :
- * @version      :
- * @Author       : 罗德远
- * @Date         : 2021-01-31 15:32:17
- * @LastEditors  : 罗德远
- * @LastEditTime : 2021-02-06 23:54:07
- * @FilePath     : \docs\.vuepress\components\Common\compLogin\index.vue
--->
+
 <template>
   <div>
     <com-form
