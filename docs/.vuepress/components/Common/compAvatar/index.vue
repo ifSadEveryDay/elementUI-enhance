@@ -1,12 +1,4 @@
-<!--
- * @Descripttion :
- * @version      :
- * @Author       : 罗德远
- * @Date         : 2021-02-04 10:02:12
- * @LastEditors  : 罗德远
- * @LastEditTime : 2021-02-04 14:27:19
- * @FilePath     : \src\components\compAvatar\index.vue
--->
+
 <template>
   <div >
     <el-badge :is-dot="isDot" class="item" v-if="imgArr.length===0 ">
