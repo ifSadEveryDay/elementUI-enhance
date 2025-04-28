@@ -1,12 +1,4 @@
-<!--
- * @Descripttion : 
- * @version      : 
- * @Author       : 罗德远
- * @Date         : 2021-02-06 21:14:14
- * @LastEditors  : 罗德远
- * @LastEditTime : 2021-02-06 21:19:04
- * @FilePath     : \docs\.vuepress\components\Common\compSkeleton\skeletonItem.vue
--->
+
 <template>
   <div>
     <div
