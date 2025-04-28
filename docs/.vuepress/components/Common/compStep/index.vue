@@ -1,12 +1,4 @@
-<!--
- * @Descripttion :
- * @version      :
- * @Author       : 罗德远
- * @Date         : 2021-02-01 13:27:30
- * @LastEditors  : 罗德远
- * @LastEditTime : 2021-02-06 23:06:58
- * @FilePath     : \docs\.vuepress\components\Common\compStep\index.vue
--->
+
 <template>
   <div class="sticky">
     <el-steps
