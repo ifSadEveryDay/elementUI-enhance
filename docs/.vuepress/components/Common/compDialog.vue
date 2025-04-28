@@ -1,12 +1,4 @@
-<!--
- * @Descripttion :
- * @version      :
- * @Author       : luoawai
- * @Date         : 2021-01-18 09:38:48
- * @LastEditors  : 罗德远
- * @LastEditTime : 2021-02-03 16:33:17
- * @FilePath     : \src\components\compDialog.vue
--->
+
 <template>
   <div
   >
