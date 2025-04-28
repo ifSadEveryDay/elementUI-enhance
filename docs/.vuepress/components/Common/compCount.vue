@@ -1,12 +1,4 @@
-<!--
- * @Descripttion :
- * @version      :
- * @Author       : 罗德远
- * @Date         : 2021-02-05 16:51:30
- * @LastEditors  : 罗德远
- * @LastEditTime : 2021-02-07 09:20:22
- * @FilePath     : \docs\.vuepress\components\Common\compCount.vue
--->
+
 <script>
 import CountUp from 'countup.js'
 export default {
