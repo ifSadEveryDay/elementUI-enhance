@@ -1,12 +1,4 @@
-<!--
- * @Descripttion :
- * @version      :
- * @Author       : luoawai
- * @Date         : 2021-01-21 09:54:51
- * @LastEditors  : 罗德远
- * @LastEditTime : 2021-02-06 18:00:12
- * @FilePath     : \docs\.vuepress\components\Common\compBtn.vue
--->
+
 <template>
   <el-tooltip :content="content" v-bind="attrs">
     <el-popconfirm
