@@ -1,12 +1,4 @@
-<!--
- * @Descripttion :
- * @version      :
- * @Author       : 罗德远
- * @Date         : 2021-02-04 09:20:25
- * @LastEditors  : 罗德远
- * @LastEditTime : 2021-02-06 21:16:45
- * @FilePath     : \docs\.vuepress\components\Common\compSkeleton\index.vue
--->
+
 <template>
   <div class="skeleton-wrapper">
     <div class="skeleton-content">
