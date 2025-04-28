@@ -1,12 +1,4 @@
-<!--
- * @Descripttion :
- * @version      :
- * @Author       : 罗德远
- * @Date         : 2021-01-26 16:46:54
- * @LastEditors  : 罗德远
- * @LastEditTime : 2021-02-03 14:26:11
- * @FilePath     : \src\components\compTextFix.vue
--->
+
 /*
 属性
 参数	        说明	                    类型	  可选值	默认值
