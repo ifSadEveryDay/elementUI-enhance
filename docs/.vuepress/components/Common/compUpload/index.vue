@@ -1,11 +1,4 @@
-<!--
- * @Author: your name
- * @Date: 2021-01-30 16:49:31
- * @LastEditTime : 2021-02-03 17:33:47
- * @LastEditors  : 罗德远
- * @Description: In User Settings Edit
- * @FilePath     : \src\components\compUpload\index.vue
--->
+
 <template>
   <div class="comp-upload">
     <el-upload
