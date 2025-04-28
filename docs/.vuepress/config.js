@@ -32,11 +32,11 @@ module.exports = {
             'base/Avatar',
             'base/Login',
             'base/Empty',
-            'base/Skeleton',
+            // 'base/Skeleton',
             'base/Step',
             'base/Table',
             'base/Text',
-            'base/upload',
+            // 'base/upload',
           ]
         }
       ]
