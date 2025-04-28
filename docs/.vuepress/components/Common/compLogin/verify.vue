@@ -1,12 +1,4 @@
-<!--
- * @Descripttion :
- * @version      :
- * @Author       : 罗德远
- * @Date         : 2021-02-01 10:54:20
- * @LastEditors  : 罗德远
- * @LastEditTime : 2021-02-01 11:26:48
- * @FilePath     : \src\components\compLogin\verify.vue
--->
+
 <template>
   <div
     class="slide-verify"
