@@ -30,4 +30,4 @@ export default {
 |    src    |   默认头像url    | string  |   —    | https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png |
 |  imgArr   |    头像组url     |  Array  |   —    |                              —                               |
 |   isDot   |     动画徽标     | boolean |   —    |                             true                             |
-| isShowNum | 头像组显示的个数 | number  |   —    |                              2                               |
+| isShowNum | 头像组显示的个数 | number  |   —    |                              3                               |
