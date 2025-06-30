@@ -1,4 +1,3 @@
-
 <template>
   <div >
     <el-badge :is-dot="isDot" class="item" v-if="imgArr.length===0 ">
@@ -40,7 +39,7 @@ export default {
     },
     isShowNum: {
       type: Number,
-      default: 2
+      default: 3
     }
   },
   components: {
