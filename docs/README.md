@@ -2,6 +2,7 @@
 
 [![GitHub Stars](https://img.shields.io/github/stars/ifSadEveryDay/elementUI-enhance?style=social)](https://github.com/ifSadEveryDay/elementUI-enhance) 
 [![GitHub Forks](https://img.shields.io/github/forks/ifSadEveryDay/elementUI-enhance?style=social)](https://github.com/ifSadEveryDay/elementUI-enhance) 
+[![Vue](https://img.shields.io/badge/language-vue-brightgreen)](Vue)
 [![License](https://img.shields.io/github/license/ifSadEveryDay/elementUI-enhance)](LICENSE)
 
 > **elementUI-enhance** 是一个在 Element-UI 之上进行功能扩展与性能优化的组件库，致力于为 Vue 2 项目带来更流畅、更优雅的开发体验。
